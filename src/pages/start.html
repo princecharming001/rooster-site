@@ -1,0 +1,23 @@
+<!-- meta {"title": "Start free", "description": "Join the Rooster pilot. 14 days free, no card. Tell us about your business and we'll set you up.", "section": "company"} -->
+<section class="page-hero">
+  <div class="sunrise"><div class="sunrise__dots"></div></div>
+  <div class="container page-hero__grid">
+    <div><div class="eyebrow">Start free</div><h1>Tell us about your business</h1><p class="lead">Fourteen days free, no card. We'll set you up personally during the pilot and your first morning list arrives the next day.</p>
+      <ul class="checklist mt-3"><li>Setup takes ten minutes, on a call or on your own</li><li>Nothing sends without your approval</li><li>Cancel with one click</li></ul>
+    </div>
+    <div class="page-hero__chick float">{{chick:chick--lg}}</div>
+  </div>
+</section>
+<section class="section section--tight">
+  <div class="container" style="max-width:720px">
+    <form class="form" data-form data-endpoint="{{formEndpoint}}" data-email="{{supportEmail}}" data-subject="Pilot signup" data-reveal>
+      <div class="form__row"><label>Your name<input name="name" required autocomplete="name"></label><label>Business name<input name="business" required autocomplete="organization"></label></div>
+      <div class="form__row"><label>Email<input name="email" type="email" required autocomplete="email"></label><label>Phone<input name="phone" type="tel" autocomplete="tel"></label></div>
+      <div class="form__row"><label>City<input name="city" required autocomplete="address-level2"></label><label>What kind of business<select name="industry"><option>Plumbing / HVAC / electrical</option><option>Cleaning / lawn / other home service</option><option>Auto repair</option><option>Salon / barber / beauty</option><option>Restaurant / café</option><option>Gym / studio</option><option>Something else</option></select></label></div>
+      <label>Anything we should know? (optional)<textarea name="notes" rows="3" placeholder="Tools you use, what you've tried, what you want more of"></textarea></label>
+      <button class="btn btn--primary btn--lg" type="submit">Request my first morning <svg class="arrow" viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4"/></svg></button>
+      <p class="form__status" role="status"></p>
+      <p class="form__note">We'll reply within one business day with a setup link. No spam, no card.</p>
+    </form>
+  </div>
+</section>

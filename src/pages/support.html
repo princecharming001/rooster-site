@@ -1,0 +1,42 @@
+<!-- meta {"title": "Support", "description": "Talk to a person at Rooster. Contact form, email, and answers to common support questions.", "section": "company"} -->
+<section class="page-hero">
+  <div class="sunrise"><div class="sunrise__dots"></div></div>
+  <div class="container page-hero__grid">
+    <div>
+      <div class="eyebrow">Support</div>
+      <h1>How can we help?</h1>
+      <p class="lead">A person reads every message. Same business day for customers, within a day or two for everyone else.</p>
+    </div>
+    <div class="page-hero__chick float">{{chick:chick--lg}}</div>
+  </div>
+</section>
+<section class="section section--tight">
+  <div class="container grid grid--2" style="align-items:start">
+    <form class="form" data-form data-endpoint="{{formEndpoint}}" data-email="{{supportEmail}}" data-subject="Support request" data-reveal>
+      <div class="form__row"><label>Name<input name="name" required autocomplete="name"></label><label>Email<input name="email" type="email" required autocomplete="email"></label></div>
+      <div class="form__row"><label>Business<input name="business" autocomplete="organization"></label><label>Topic<select name="topic"><option>Question before signing up</option><option>Help with my account</option><option>A connection isn't working</option><option>Billing</option><option>Report a bug</option><option>Something else</option></select></label></div>
+      <label>Message<textarea name="message" rows="5" required></textarea></label>
+      <button class="btn btn--primary" type="submit">Send <svg class="arrow" viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4"/></svg></button>
+      <p class="form__status" role="status"></p>
+      <p class="form__note">Or email <a href="mailto:{{supportEmail}}" style="text-decoration:underline">{{supportEmail}}</a>. For security issues, put "security" in the subject.</p>
+    </form>
+    <div class="stack" data-reveal>
+      <div class="card"><h3>Book a demo</h3><p>Twenty minutes. We'll show you what a morning would look like for your business, using your real Google profile.</p><a class="btn btn--ghost mt-2" href="{{calendlyUrl}}" target="_blank" rel="noopener" data-calendly>Pick a time</a></div>
+      <div class="card"><h3>Setup help</h3><p>Stuck connecting Google or Instagram? The <a href="/knowledge/" style="text-decoration:underline">knowledge base</a> has step-by-step guides with screenshots.</p></div>
+      <div class="card"><h3>Pause everything</h3><p>Already a customer and need to stop all sends right now? Open the app, tap your business name, tap Pause. Or email us with "pause" in the subject and we'll do it within the hour.</p></div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="center" data-reveal><h2>Support FAQ</h2></div>
+    <div class="faq mt-4" data-reveal>
+      <details><summary>How do I contact {{name}} support?</summary><p>The form above, or email {{supportEmail}}. Customers on Full and Multi-location get same-business-day replies. Everyone gets a human.</p></details>
+      <details><summary>How quickly will you respond?</summary><p>Same business day for customers. One to two business days for pre-sales questions. Security reports are acknowledged within one business day.</p></details>
+      <details><summary>How do I report a bug or a broken connection?</summary><p>Use the form with "A connection isn't working" or "Report a bug," and tell us which tool and what you saw. A screenshot helps.</p></details>
+      <details><summary>I'm new. How do I choose a plan?</summary><p>Start free on Full and see what shows up in your feed for two weeks. If you only end up approving reviews and Google items, Starter is enough.</p></details>
+      <details><summary>How do I report a security vulnerability?</summary><p>Email {{supportEmail}} with "security" in the subject. We'll acknowledge within one business day and keep you updated. Please don't test against other customers' data.</p></details>
+      <details><summary>How do I cancel?</summary><p>In the app: your business name, then Billing, then Cancel. Takes effect at the end of the billing period. You can export your data first.</p></details>
+    </div>
+  </div>
+</section>
