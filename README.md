@@ -12,7 +12,7 @@ Builds `src/` into `dist/` and serves it at http://localhost:4321 with rebuild-o
 Everything lives in `site.config.mjs`:
 - `name`, `tagline`, `description`
 - `calendlyUrl`: paste your Calendly link. Every "Book a demo" button and the `/demo/` page use it. Until it's set, demo buttons route to `/demo/` which explains what to do.
-- `signupUrl`: where "Start free" goes (default `/start/`, the pilot form).
+- `signupUrl`: where "Start free" goes. Now `/app/`, the Rooster app in demo mode (`public/app/index.html`, one self-contained file built by `pnpm build:single` in the app repo, `apps/web/dist-single/index.html`). The pilot form is still at `/start/`; set `signupUrl` back to `/start/` to use it again.
 - `supportEmail`: contact + forms fall back to `mailto:` this address.
 - `formEndpoint`: optional Formspree/Basin-style POST endpoint for the contact and pilot forms.
 - `basePath`: subpath the site is served under. `/rooster-site` for the GitHub Pages project URL; set to `""` when you move to a custom domain served at the root.
