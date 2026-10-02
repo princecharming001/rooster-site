@@ -1,9 +1,9 @@
 // Single place to change brand and links.
 export default {
   name: "Rooster",
-  domain: "princecharming001.github.io",
+  domain: "therooster.farm",
   // Served under a subpath? (GitHub Pages project sites are /<repo>). Leave "" when served at the domain root.
-  basePath: "/rooster-site",
+  basePath: "",
   tagline: "Wake up to customers.",
   description: "Rooster runs your reviews, Google profile, social posts and win-back texts overnight. You approve everything from your phone in 15 minutes each morning.",
   // Paste your Calendly link here. Every "Book a demo" button uses it.
